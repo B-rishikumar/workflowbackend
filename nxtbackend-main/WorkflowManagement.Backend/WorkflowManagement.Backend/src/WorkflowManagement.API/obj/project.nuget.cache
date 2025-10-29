@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OK2XP2SVf9s=",
+  "dgSpecHash": "ji5amzZQp2o=",
   "success": false,
-  "projectFilePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+  "projectFilePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\aspnetcore.healthchecks.redis\\7.0.1\\aspnetcore.healthchecks.redis.7.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\8.0.0\\aspnetcore.healthchecks.sqlserver.8.0.0.nupkg.sha512",
@@ -196,9 +196,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "WorkflowManagement.API depends on AspNetCore.HealthChecks.SqlServer (>= 7.0.1) but AspNetCore.HealthChecks.SqlServer 7.0.1 was not found. AspNetCore.HealthChecks.SqlServer 8.0.0 was resolved instead.",
-      "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "filePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
       "libraryId": "AspNetCore.HealthChecks.SqlServer",
       "targetGraphs": [
         "net8.0"
@@ -208,9 +208,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 13.0.1 was resolved.",
-      "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "filePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net8.0"
@@ -220,9 +220,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.2.0 was resolved.",
-      "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "filePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net8.0"
@@ -232,8 +232,8 @@
       "code": "NU1605",
       "level": "Error",
       "message": "Warning As Error: Detected package downgrade: System.IdentityModel.Tokens.Jwt from 8.14.0 to 7.5.1. Reference the package directly from the project to select a different version. \r\n WorkflowManagement.API -> WorkflowManagement.Application -> System.IdentityModel.Tokens.Jwt (>= 8.14.0) \r\n WorkflowManagement.API -> System.IdentityModel.Tokens.Jwt (>= 7.5.1)",
-      "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
-      "filePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+      "filePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
         "net8.0"
