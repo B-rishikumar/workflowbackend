@@ -89,6 +89,9 @@ public static class ServiceCollectionExtensions
         // Logging
         services.AddScoped<ILoggerService, SerilogService>();
 
+        // Data Seeding
+        services.AddScoped<WorkflowManagement.Infrastructure.Data.Seed.DataSeeder>();
+
         // Background Services with Quartz
         services.AddQuartz(q =>
         {

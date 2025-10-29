@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 using System.Reflection;
 using WorkflowManagement.Core.Entities;
 using WorkflowManagement.Core.Entities.Base;
@@ -13,6 +14,8 @@ public class WorkflowDbContext : DbContext
 
     // DbSets
     public DbSet<User> Users { get; set; }
+    public DbSet<Role> Roles { get; set; }
+    public DbSet<Permission> Permissions { get; set; }
     public DbSet<Workspace> Workspaces { get; set; }
     public DbSet<Project> Projects { get; set; }
     public DbSet<Core.Entities.WorkflowEnvironment> Environments { get; set; }
@@ -81,7 +84,8 @@ public class WorkflowDbContext : DbContext
         if (Database.ProviderName == "Microsoft.EntityFrameworkCore.SqlServer")
         {
             // SQL Server JSON configuration
-            modelBuilder.Entity<User>().OwnsOne(e => e.AuditData, builder => builder.ToJson());
+            modelBuilder.Entity<Role>().OwnsOne(e => e.Settings, builder => builder.ToJson());
+            modelBuilder.Entity<Permission>().OwnsOne(e => e.Metadata, builder => builder.ToJson());
             modelBuilder.Entity<Workspace>().OwnsOne(e => e.Settings, builder => builder.ToJson());
             modelBuilder.Entity<Project>().OwnsOne(e => e.Settings, builder => builder.ToJson());
             modelBuilder.Entity<Core.Entities.WorkflowEnvironment>().OwnsOne(e => e.Variables, builder => builder.ToJson());

@@ -52,6 +52,28 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasConversion<string>();
 
+        // Unique constraints
+        builder.HasIndex(u => u.Email)
+            .IsUnique()
+            .HasDatabaseName("IX_Users_Email");
+
+        builder.HasIndex(u => u.Username)
+            .IsUnique()
+            .HasDatabaseName("IX_Users_Username");
+
+        // Performance indexes
+        builder.HasIndex(u => u.IsActive)
+            .HasDatabaseName("IX_Users_IsActive");
+
+        builder.HasIndex(u => u.Role)
+            .HasDatabaseName("IX_Users_Role");
+
+        // Relationship with Role
+        builder.HasOne(u => u.DetailedRole)
+            .WithMany(r => r.Users)
+            .HasForeignKey(u => u.RoleId)
+            .OnDelete(DeleteBehavior.SetNull);
+
         // Relationships
         builder.HasMany(u => u.OwnedWorkspaces)
             .WithOne(w => w.Owner)

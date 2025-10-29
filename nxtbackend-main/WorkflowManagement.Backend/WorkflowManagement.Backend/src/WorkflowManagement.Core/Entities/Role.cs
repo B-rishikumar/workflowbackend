@@ -1,6 +1,6 @@
-// Role.csusing System.ComponentModel.DataAnnotations;
-using WorkflowManagement.Core.Entities.Base;
 using System.ComponentModel.DataAnnotations;
+using WorkflowManagement.Core.Entities.Base;
+
 namespace WorkflowManagement.Core.Entities;
 
 public class Role : SoftDeleteEntity

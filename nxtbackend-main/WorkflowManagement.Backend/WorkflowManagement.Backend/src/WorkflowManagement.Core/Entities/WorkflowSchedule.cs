@@ -41,9 +41,4 @@ public class WorkflowSchedule : BaseEntity
     
     // Navigation Properties
     public Workflow Workflow { get; set; } = null!;
-
-    public static implicit operator WorkflowSchedule(WorkflowSchedule v)
-    {
-        throw new NotImplementedException();
-    }
 }
