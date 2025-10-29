@@ -783,11 +783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
+      "projectUniqueName": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
       "projectName": "WorkflowManagement.Shared",
-      "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
+      "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\obj\\",
+      "outputPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"

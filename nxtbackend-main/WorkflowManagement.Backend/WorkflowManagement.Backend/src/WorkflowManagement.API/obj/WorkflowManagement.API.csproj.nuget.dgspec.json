@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj": {}
+    "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj": {}
   },
   "projects": {
-    "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj": {
+    "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+        "projectUniqueName": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
         "projectName": "WorkflowManagement.API",
-        "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+        "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\obj\\",
+        "outputPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,17 +26,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj"
               },
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj"
               },
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj"
               },
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj"
               }
             }
           }
@@ -193,14 +193,14 @@
         }
       }
     },
-    "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj": {
+    "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
+        "projectUniqueName": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
         "projectName": "WorkflowManagement.Application",
-        "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
+        "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\obj\\",
+        "outputPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -215,11 +215,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj"
               },
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj"
               }
             }
           }
@@ -335,14 +335,14 @@
         }
       }
     },
-    "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
+    "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+        "projectUniqueName": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
         "projectName": "WorkflowManagement.Core",
-        "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+        "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\obj\\",
+        "outputPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -437,14 +437,14 @@
         }
       }
     },
-    "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj": {
+    "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
         "projectName": "WorkflowManagement.Infrastructure",
-        "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
+        "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\obj\\",
+        "outputPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -459,14 +459,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj"
               },
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj"
               },
-              "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
-                "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj"
+              "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
+                "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj"
               }
             }
           }
@@ -602,14 +602,14 @@
         }
       }
     },
-    "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
+    "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
+        "projectUniqueName": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
         "projectName": "WorkflowManagement.Shared",
-        "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
+        "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\obj\\",
+        "outputPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"

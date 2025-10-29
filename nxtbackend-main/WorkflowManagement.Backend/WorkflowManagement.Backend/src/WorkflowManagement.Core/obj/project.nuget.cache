@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pIpeiwA5HEs=",
+  "dgSpecHash": "cqvz5x02s8w=",
   "success": true,
-  "projectFilePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+  "projectFilePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
@@ -45,9 +45,9 @@
       "code": "NU1605",
       "level": "Warning",
       "message": "Detected package downgrade: Microsoft.Extensions.DependencyInjection.Abstractions from 8.0.1 to 8.0.0. Reference the package directly from the project to select a different version. \r\n WorkflowManagement.Core -> Microsoft.Extensions.Logging.Abstractions 8.0.1 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n WorkflowManagement.Core -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "projectPath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+      "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+      "filePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
       "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
       "targetGraphs": [
         "net8.0"
