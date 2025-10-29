@@ -1,0 +1,838 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}|src\\WorkflowManagement.API\\WorkflowManagement.API.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.api\\controllers\\workflowexecutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}|src\\WorkflowManagement.API\\WorkflowManagement.API.csproj|solutionrelative:src\\workflowmanagement.api\\controllers\\workflowexecutioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF286F52-1995-4490-B405-B83AC3D2D855}|src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.infrastructure\\data\\seed\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF286F52-1995-4490-B405-B83AC3D2D855}|src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj|solutionrelative:src\\workflowmanagement.infrastructure\\data\\seed\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\workflowexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\workflowexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\dtos\\workflow\\createworkflowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\dtos\\workflow\\createworkflowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\commands\\workflows\\deleteworkflowcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\commands\\workflows\\deleteworkflowcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\apiendpointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\apiendpointservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\approvalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\approvalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\iapprovalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\iapprovalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\schedulingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\schedulingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\dtos\\common\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\dtos\\common\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\services\\iworkflowexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\services\\iworkflowexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\workflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\workflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}|src\\WorkflowManagement.API\\WorkflowManagement.API.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.api\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}|src\\WorkflowManagement.API\\WorkflowManagement.API.csproj|solutionrelative:src\\workflowmanagement.api\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\iworkflowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\iworkflowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\queries\\workflows\\getworkflowquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\queries\\workflows\\getworkflowquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\queries\\users\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\queries\\users\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\queries\\workflows\\getworkflowsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\queries\\workflows\\getworkflowsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\swaggerparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\swaggerparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\workflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\workflowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\soapparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\soapparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}|src\\WorkflowManagement.API\\WorkflowManagement.API.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.api\\workflowmanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}|src\\WorkflowManagement.API\\WorkflowManagement.API.csproj|solutionrelative:src\\workflowmanagement.api\\workflowmanagement.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\dtos\\auth\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\dtos\\auth\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\handlers\\queries\\getworkflowhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\handlers\\queries\\getworkflowhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\iworkflowexecutionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\iworkflowexecutionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.application\\workflowmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}|src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj|solutionrelative:src\\workflowmanagement.application\\workflowmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\workflowmanagement.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\workflowmanagement.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF286F52-1995-4490-B405-B83AC3D2D855}|src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.infrastructure\\workflowmanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BF286F52-1995-4490-B405-B83AC3D2D855}|src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj|solutionrelative:src\\workflowmanagement.infrastructure\\workflowmanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\workflowexecution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\workflowexecution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\workflowapproval.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\workflowapproval.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\workflowmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\workflowmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\apiendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\apiendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\imetricsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\imetricsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\iapiendpointrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\iapiendpointrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\ienvironmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\ienvironmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\workflowenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\workflowenvironment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\iprojectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\enums\\apiendpointtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\enums\\apiendpointtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\enums\\wfmhttpmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\enums\\wfmhttpmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\exceptions\\workflowexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\exceptions\\workflowexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\services\\isoapparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\services\\isoapparserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\services\\irequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\services\\irequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\interfaces\\repositories\\iworkspacerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\interfaces\\repositories\\iworkspacerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.core\\entities\\workspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D87BBD-D484-4981-AA55-4D00897DA06F}|src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj|solutionrelative:src\\workflowmanagement.core\\entities\\workspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F71AB745-3E70-4B12-9CEA-A2D88D0C2252}|src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj|d:\\projects\\workflowmanagement.backend\\workflowmanagement.backend\\src\\workflowmanagement.shared\\extensions\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F71AB745-3E70-4B12-9CEA-A2D88D0C2252}|src\\WorkflowManagement.Shared\\WorkflowManagement.Shared.csproj|solutionrelative:src\\workflowmanagement.shared\\extensions\\httpcontextextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkflowExecutionController.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\Controllers\\WorkflowExecutionController.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.API\\Controllers\\WorkflowExecutionController.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\Controllers\\WorkflowExecutionController.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.API\\Controllers\\WorkflowExecutionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T01:17:31.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\Data\\Seed\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Infrastructure\\Data\\Seed\\DataSeeder.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\Data\\Seed\\DataSeeder.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Infrastructure\\Data\\Seed\\DataSeeder.cs",
+              "ViewState": "AgIAADEBAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T05:06:45.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateWorkflowDto.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\DTOs\\Workflow\\CreateWorkflowDto.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\DTOs\\Workflow\\CreateWorkflowDto.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\DTOs\\Workflow\\CreateWorkflowDto.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\DTOs\\Workflow\\CreateWorkflowDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T05:05:26.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeleteWorkflowCommand.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Commands\\Workflows\\DeleteWorkflowCommand.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Commands\\Workflows\\DeleteWorkflowCommand.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Commands\\Workflows\\DeleteWorkflowCommand.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Commands\\Workflows\\DeleteWorkflowCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T05:05:17.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApprovalService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\ApprovalService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\ApprovalService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\ApprovalService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\ApprovalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:46:16.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Workflow.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Workflow.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\Workflow.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Workflow.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\Workflow.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA4wC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:24:59.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkflowExecutionService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\WorkflowExecutionService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\WorkflowExecutionService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\WorkflowExecutionService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\WorkflowExecutionService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:31:40.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IWorkflowExecutionService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Services\\IWorkflowExecutionService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Services\\IWorkflowExecutionService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Services\\IWorkflowExecutionService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Services\\IWorkflowExecutionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:35:45.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IApprovalRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApprovalRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApprovalRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApprovalRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApprovalRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:48:41.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiEndpointService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\ApiEndpointService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\ApiEndpointService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\ApiEndpointService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\ApiEndpointService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:48:33.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SchedulingService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\SchedulingService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\SchedulingService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\SchedulingService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\SchedulingService.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAYwEEBAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:44:21.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResponseDto.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\DTOs\\Common\\ResponseDto.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\DTOs\\Common\\ResponseDto.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\DTOs\\Common\\ResponseDto.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\DTOs\\Common\\ResponseDto.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:51:49.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Enums\\UserRole.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Enums\\UserRole.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Enums\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T09:31:57.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LogsController.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\Controllers\\LogsController.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.API\\Controllers\\LogsController.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\Controllers\\LogsController.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.API\\Controllers\\LogsController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAewFUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:47:25.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetWorkflowQuery.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowQuery.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowQuery.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowQuery.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:55:13.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IWorkflowRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:48:46.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetUserQuery.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Queries\\Users\\GetUserQuery.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Queries\\Users\\GetUserQuery.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Queries\\Users\\GetUserQuery.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Queries\\Users\\GetUserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:55:04.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetWorkflowsQuery.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowsQuery.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowsQuery.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowsQuery.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Queries\\Workflows\\GetWorkflowsQuery.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:53:31.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SwaggerParserService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\SwaggerParserService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\SwaggerParserService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\SwaggerParserService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\SwaggerParserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:53:16.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WorkflowService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\WorkflowService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\WorkflowService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\WorkflowService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\WorkflowService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:49:11.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\UserService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:49:01.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\NotificationService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\NotificationService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAWwBAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:48:45.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SoapParserService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\SoapParserService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\SoapParserService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\SoapParserService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\SoapParserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:48:47.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Services\\AuthService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwBAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:45:09.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\DTOs\\Auth\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:41:42.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "WorkflowManagement.API.csproj",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+              "RelativeToolTip": "src\\WorkflowManagement.API\\WorkflowManagement.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-23T07:28:25.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetWorkflowHandler.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Handlers\\Queries\\GetWorkflowHandler.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\Handlers\\Queries\\GetWorkflowHandler.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\Handlers\\Queries\\GetWorkflowHandler.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\Handlers\\Queries\\GetWorkflowHandler.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAewD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:40:14.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IWorkflowExecutionRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowExecutionRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowExecutionRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowExecutionRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkflowExecutionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:48:36.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "WorkflowManagement.Application.csproj",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
+              "RelativeToolTip": "src\\WorkflowManagement.Application\\WorkflowManagement.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-22T10:45:51.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WorkflowManagement.Core.csproj",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-23T07:10:40.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WorkflowExecution.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowExecution.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\WorkflowExecution.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowExecution.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\WorkflowExecution.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:39:44.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "WorkflowApproval.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowApproval.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\WorkflowApproval.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowApproval.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\WorkflowApproval.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:39:15.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WorkflowManagement.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
+              "RelativeToolTip": "src\\WorkflowManagement.Infrastructure\\WorkflowManagement.Infrastructure.csproj",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowBsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-22T10:42:24.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "WorkflowMetrics.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowMetrics.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\WorkflowMetrics.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowMetrics.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\WorkflowMetrics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:37:23.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApiEndpoint.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\ApiEndpoint.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\ApiEndpoint.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\ApiEndpoint.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\ApiEndpoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T06:42:43.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IMetricsRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IMetricsRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IMetricsRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IMetricsRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IMetricsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:48:29.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:08:56.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IApiEndpointRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApiEndpointRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApiEndpointRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApiEndpointRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IApiEndpointRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:46:59.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "WorkflowEnvironment.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowEnvironment.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\WorkflowEnvironment.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\WorkflowEnvironment.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\WorkflowEnvironment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:54:34.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IEnvironmentRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IEnvironmentRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IEnvironmentRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IEnvironmentRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IEnvironmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:51:07.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IProjectRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IProjectRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IProjectRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IProjectRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IProjectRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:51:29.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ApiEndpointType.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Enums\\ApiEndpointType.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Enums\\ApiEndpointType.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Enums\\ApiEndpointType.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Enums\\ApiEndpointType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:21:51.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "WFMHttpMethod.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Enums\\WFMHttpMethod.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Enums\\WFMHttpMethod.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Enums\\WFMHttpMethod.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Enums\\WFMHttpMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T11:03:43.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "WorkflowException.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Exceptions\\WorkflowException.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Exceptions\\WorkflowException.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Exceptions\\WorkflowException.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Exceptions\\WorkflowException.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAMwMoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T11:04:39.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ISoapParserService.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Services\\ISoapParserService.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Services\\ISoapParserService.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Services\\ISoapParserService.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Services\\ISoapParserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:53:00.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IRequestHandler.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Services\\IRequestHandler.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Services\\IRequestHandler.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Services\\IRequestHandler.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Services\\IRequestHandler.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAYwAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:51:56.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\Role.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Role.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:50:44.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Permission.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\Permission.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Permission.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:48:50.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Workspace.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Workspace.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Entities\\Workspace.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Entities\\Workspace.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Entities\\Workspace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:47:57.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IWorkspaceRepository.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkspaceRepository.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkspaceRepository.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkspaceRepository.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Core\\Interfaces\\Repositories\\IWorkspaceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:47:44.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "HttpContextExtensions.cs",
+              "DocumentMoniker": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\Extensions\\HttpContextExtensions.cs",
+              "RelativeDocumentMoniker": "src\\WorkflowManagement.Shared\\Extensions\\HttpContextExtensions.cs",
+              "ToolTip": "D:\\projects\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Shared\\Extensions\\HttpContextExtensions.cs",
+              "RelativeToolTip": "src\\WorkflowManagement.Shared\\Extensions\\HttpContextExtensions.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAArwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T10:38:25.3Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5A9E6E6-7C8D-4F5D-9A6B-8C7E9F0A1B2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C6B0F7F7-8D9E-5F6E-0B7C-9D8F0A1B2C3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowManagement.API", "src\WorkflowManagement.API\WorkflowManagement.API.csproj", "{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowManagement.Core", "src\WorkflowManagement.Core\WorkflowManagement.Core.csproj", "{49D87BBD-D484-4981-AA55-4D00897DA06F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowManagement.Application", "src\WorkflowManagement.Application\WorkflowManagement.Application.csproj", "{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowManagement.Infrastructure", "src\WorkflowManagement.Infrastructure\WorkflowManagement.Infrastructure.csproj", "{BF286F52-1995-4490-B405-B83AC3D2D855}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowManagement.Shared", "src\WorkflowManagement.Shared\WorkflowManagement.Shared.csproj", "{F71AB745-3E70-4B12-9CEA-A2D88D0C2252}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD9BC09-8F1C-4A6A-9DAD-EAA2273D2610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D87BBD-D484-4981-AA55-4D00897DA06F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D87BBD-D484-4981-AA55-4D00897DA06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D87BBD-D484-4981-AA55-4D00897DA06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D87BBD-D484-4981-AA55-4D00897DA06F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B2522C-90DD-4A40-A52C-3FFE323FAFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF286F52-1995-4490-B405-B83AC3D2D855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF286F52-1995-4490-B405-B83AC3D2D855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF286F52-1995-4490-B405-B83AC3D2D855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF286F52-1995-4490-B405-B83AC3D2D855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71AB745-3E70-4B12-9CEA-A2D88D0C2252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71AB745-3E70-4B12-9CEA-A2D88D0C2252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71AB745-3E70-4B12-9CEA-A2D88D0C2252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71AB745-3E70-4B12-9CEA-A2D88D0C2252}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

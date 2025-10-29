@@ -1,0 +1,575 @@
+# =============================================
+# Kubernetes Deployment for WorkflowManagement
+# =============================================
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: workflowmanagement
+  labels:
+    name: workflowmanagement
+    app: workflowmanagement
+
+---
+# ConfigMap for application settings
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: workflowmanagement-config
+  namespace: workflowmanagement
+data:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  ASPNETCORE_URLS: "http://+:8080"
+  Logging__LogLevel__Default: "Information"
+  Logging__LogLevel__Microsoft.AspNetCore: "Warning"
+  JWT__Issuer: "WorkflowManagement"
+  JWT__Audience: "WorkflowManagementUsers"
+  JWT__ExpiryMinutes: "60"
+  Cors__AllowedOrigins: "http://localhost:3000,http://localhost:3001"
+  RateLimiting__Enabled: "true"
+  RateLimiting__RequestsPerMinute: "100"
+  Email__SmtpHost: "smtp.gmail.com"
+  Email__SmtpPort: "587"
+  Email__EnableSsl: "true"
+  Swagger__Enabled: "true"
+  HealthChecks__Enabled: "true"
+  Scheduler__Enabled: "true"
+  Scheduler__IntervalSeconds: "60"
+  Scheduler__MaxConcurrentExecutions: "10"
+
+---
+# Secret for sensitive data
+apiVersion: v1
+kind: Secret
+metadata:
+  name: workflowmanagement-secrets
+  namespace: workflowmanagement
+type: Opaque
+stringData:
+  ConnectionStrings__DefaultConnection: "Server=sqlserver-service,1433;Database=WorkflowManagementDB;User Id=sa;Password=WorkflowManagement@2024!;TrustServerCertificate=true;MultipleActiveResultSets=true;"
+  ConnectionStrings__Redis: "redis-service:6379"
+  JWT__SecretKey: "WorkflowManagementSecretKeyForJWTTokenGeneration123456789"
+  Email__Username: "your-email@gmail.com"
+  Email__Password: "your-app-password"
+  SA_PASSWORD: "WorkflowManagement@2024!"
+
+---
+# SQL Server Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqlserver
+  namespace: workflowmanagement
+  labels:
+    app: sqlserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqlserver
+  template:
+    metadata:
+      labels:
+        app: sqlserver
+    spec:
+      containers:
+      - name: sqlserver
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        ports:
+        - containerPort: 1433
+        env:
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: SA_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: workflowmanagement-secrets
+              key: SA_PASSWORD
+        - name: MSSQL_PID
+          value: "Developer"
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "0.5"
+          limits:
+            memory: "2Gi"
+            cpu: "1"
+        volumeMounts:
+        - name: sqlserver-data
+          mountPath: /var/opt/mssql
+        livenessProbe:
+          exec:
+            command:
+            - /bin/bash
+            - -c
+            - /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "$SA_PASSWORD" -Q "SELECT 1"
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+        readinessProbe:
+          exec:
+            command:
+            - /bin/bash
+            - -c
+            - /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "$SA_PASSWORD" -Q "SELECT 1"
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+      volumes:
+      - name: sqlserver-data
+        persistentVolumeClaim:
+          claimName: sqlserver-pvc
+
+---
+# SQL Server Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: sqlserver-service
+  namespace: workflowmanagement
+spec:
+  selector:
+    app: sqlserver
+  ports:
+  - port: 1433
+    targetPort: 1433
+  type: ClusterIP
+
+---
+# SQL Server PVC
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sqlserver-pvc
+  namespace: workflowmanagement
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard
+
+---
+# Redis Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: workflowmanagement
+  labels:
+    app: redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: redis:7-alpine
+        ports:
+        - containerPort: 6379
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "0.1"
+          limits:
+            memory: "512Mi"
+            cpu: "0.5"
+        volumeMounts:
+        - name: redis-data
+          mountPath: /data
+        livenessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      volumes:
+      - name: redis-data
+        persistentVolumeClaim:
+          claimName: redis-pvc
+
+---
+# Redis Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+  namespace: workflowmanagement
+spec:
+  selector:
+    app: redis
+  ports:
+  - port: 6379
+    targetPort: 6379
+  type: ClusterIP
+
+---
+# Redis PVC
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-pvc
+  namespace: workflowmanagement
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: standard
+
+---
+# WorkflowManagement API Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workflowmanagement-api
+  namespace: workflowmanagement
+  labels:
+    app: workflowmanagement-api
+    version: v1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: workflowmanagement-api
+  template:
+    metadata:
+      labels:
+        app: workflowmanagement-api
+        version: v1
+    spec:
+      containers:
+      - name: api
+        image: workflowmanagement:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: workflowmanagement-config
+        - secretRef:
+            name: workflowmanagement-secrets
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "0.2"
+          limits:
+            memory: "1Gi"
+            cpu: "1"
+        volumeMounts:
+        - name: api-logs
+          mountPath: /app/logs
+        - name: api-temp
+          mountPath: /app/temp
+        livenessProbe:
+          httpGet:
+            path: /health/live
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /health/ready
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        startupProbe:
+          httpGet:
+            path: /health/live
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 10
+      volumes:
+      - name: api-logs
+        emptyDir: {}
+      - name: api-temp
+        emptyDir: {}
+      initContainers:
+      - name: wait-for-db
+        image: busybox:1.35
+        command: ['sh', '-c']
+        args:
+        - |
+          until nc -z sqlserver-service 1433; do
+            echo "Waiting for SQL Server..."
+            sleep 5
+          done
+          echo "SQL Server is ready!"
+      - name: wait-for-redis
+        image: busybox:1.35
+        command: ['sh', '-c']
+        args:
+        - |
+          until nc -z redis-service 6379; do
+            echo "Waiting for Redis..."
+            sleep 5
+          done
+          echo "Redis is ready!"
+
+---
+# WorkflowManagement API Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: workflowmanagement-api-service
+  namespace: workflowmanagement
+  labels:
+    app: workflowmanagement-api
+spec:
+  selector:
+    app: workflowmanagement-api
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+  type: ClusterIP
+
+---
+# WorkflowManagement Scheduler Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workflowmanagement-scheduler
+  namespace: workflowmanagement
+  labels:
+    app: workflowmanagement-scheduler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workflowmanagement-scheduler
+  template:
+    metadata:
+      labels:
+        app: workflowmanagement-scheduler
+    spec:
+      containers:
+      - name: scheduler
+        image: workflowmanagement-scheduler:latest
+        imagePullPolicy: IfNotPresent
+        envFrom:
+        - configMapRef:
+            name: workflowmanagement-config
+        - secretRef:
+            name: workflowmanagement-secrets
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "0.1"
+          limits:
+            memory: "512Mi"
+            cpu: "0.5"
+        volumeMounts:
+        - name: scheduler-logs
+          mountPath: /app/logs
+      volumes:
+      - name: scheduler-logs
+        emptyDir: {}
+      initContainers:
+      - name: wait-for-db
+        image: busybox:1.35
+        command: ['sh', '-c']
+        args:
+        - |
+          until nc -z sqlserver-service 1433; do
+            echo "Waiting for SQL Server..."
+            sleep 5
+          done
+          echo "SQL Server is ready!"
+
+---
+# Ingress for external access
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: workflowmanagement-ingress
+  namespace: workflowmanagement
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, PUT, POST, DELETE, PATCH, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-headers: "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "*"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - workflowmanagement.yourdomain.com
+    secretName: workflowmanagement-tls
+  rules:
+  - host: workflowmanagement.yourdomain.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: workflowmanagement-api-service
+            port:
+              number: 80
+
+---
+# HorizontalPodAutoscaler for API
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: workflowmanagement-api-hpa
+  namespace: workflowmanagement
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: workflowmanagement-api
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 50
+        periodSeconds: 60
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 60
+
+---
+# PodDisruptionBudget for high availability
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: workflowmanagement-api-pdb
+  namespace: workflowmanagement
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: workflowmanagement-api
+
+---
+# NetworkPolicy for security
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: workflowmanagement-network-policy
+  namespace: workflowmanagement
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: ingress-nginx
+    - namespaceSelector:
+        matchLabels:
+          name: workflowmanagement
+  - ports:
+    - protocol: TCP
+      port: 8080
+  - ports:
+    - protocol: TCP
+      port: 1433
+  - ports:
+    - protocol: TCP
+      port: 6379
+  egress:
+  - {}
+
+---
+# ServiceMonitor for Prometheus (if using Prometheus Operator)
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: workflowmanagement-api-metrics
+  namespace: workflowmanagement
+  labels:
+    app: workflowmanagement-api
+spec:
+  selector:
+    matchLabels:
+      app: workflowmanagement-api
+  endpoints:
+  - port: http
+    path: /metrics
+    interval: 30s
+    scrapeTimeout: 10s
+
+---
+# RBAC for service account
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: workflowmanagement-sa
+  namespace: workflowmanagement
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: workflowmanagement-role
+  namespace: workflowmanagement
+rules:
+- apiGroups: [""]
+  resources: ["pods", "services", "endpoints"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "replicasets"]
+  verbs: ["get", "list", "watch"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: workflowmanagement-rolebinding
+  namespace: workflowmanagement
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: workflowmanagement-role
+subjects:
+- kind: ServiceAccount
+  name: workflowmanagement-sa
+  namespace: workflowmanagement
