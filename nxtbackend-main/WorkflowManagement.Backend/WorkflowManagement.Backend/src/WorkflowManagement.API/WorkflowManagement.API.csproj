@@ -23,7 +23,7 @@
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
 		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.1" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
 		<!-- Remove Microsoft.AspNetCore.RateLimiting - it's built into .NET 8.0 -->
 		<!-- Keep AspNetCoreRateLimit for advanced rate limiting features -->
 		<PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
