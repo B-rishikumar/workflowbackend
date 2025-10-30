@@ -14,6 +14,8 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		 <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+  <PackageReference Update="System.ComponentModel.Annotations" Version="5.0.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 		<PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
 		<PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
@@ -23,7 +25,15 @@
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
 		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.1" />
+	<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+<PackageReference Include="AutoMapper" Version="12.0.1" />
+<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+<PackageReference Include="MediatR" Version="11.1.0" />
+
+
+<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+
+
 		<!-- Remove Microsoft.AspNetCore.RateLimiting - it's built into .NET 8.0 -->
 		<!-- Keep AspNetCoreRateLimit for advanced rate limiting features -->
 		<PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />

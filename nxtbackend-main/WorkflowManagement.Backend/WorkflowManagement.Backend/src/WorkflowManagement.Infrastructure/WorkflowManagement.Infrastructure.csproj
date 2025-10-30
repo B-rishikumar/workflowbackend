@@ -19,6 +19,8 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
     <PackageReference Include="Serilog.Sinks.Seq" Version="6.0.0" />
+     <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+  <PackageReference Update="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="Quartz" Version="3.8.0" />
     <PackageReference Include="Quartz.Extensions.Hosting" Version="3.8.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
@@ -26,6 +28,13 @@
     <PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+ <PackageReference Include="AutoMapper" Version="12.0.1" />
+<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+
+<PackageReference Include="MediatR" Version="11.1.0" />
+<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+
+
   </ItemGroup>
 
   <ItemGroup>

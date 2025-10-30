@@ -1,17 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "cqvz5x02s8w=",
+  "dgSpecHash": "PGw9z5xzv/Y=",
   "success": true,
-  "projectFilePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
+  "projectFilePath": "D:\\workflowbackend\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
@@ -40,18 +42,5 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.21\\microsoft.windowsdesktop.app.ref.8.0.21.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.21\\microsoft.aspnetcore.app.ref.8.0.21.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "message": "Detected package downgrade: Microsoft.Extensions.DependencyInjection.Abstractions from 8.0.1 to 8.0.0. Reference the package directly from the project to select a different version. \r\n WorkflowManagement.Core -> Microsoft.Extensions.Logging.Abstractions 8.0.1 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.1) \r\n WorkflowManagement.Core -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.0)",
-      "projectPath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\Nxtbackendcode\\nxtbackend-main\\WorkflowManagement.Backend\\WorkflowManagement.Backend\\src\\WorkflowManagement.Core\\WorkflowManagement.Core.csproj",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
